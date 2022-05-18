@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Artlife Architect and interiors</title>
+    <link rel="stylesheet" href="style1.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600;700;800&family=Josefin+Slab:ital,wght@0,400;0,600;1,300;1,400;1,600&family=Muli:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="menu">
+      <ul>
+        <li><a href="menu.html">Menu</a></li> 
+      </ul>
+  </div>
+    <div class="theme">
+      <div class="title">Our services</div>
+      <div id="theme-toggler" class="fas fa-moon"></div>
+          <div class="box-container">
+            <div class="box">
+                <span class="number">01</span>
+                <i class="fas fa-pen-nib"></i>
+                <h3>Interior</h3>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Doloremque, officia! Necessitatibus delectus sed dicta corrupti
+                    voluptatibus, omnis eius vel ab magni nemo, incidunt esse! Quod!  
+                </p>
+            </div>
+
+            <div class="box">
+                <span class="number">02</span>
+                <i class="fas fa-paint-roller"></i>
+                <h3>Exterior</h3>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Doloremque, officia! Necessitatibus delectus sed dicta corrupti
+                    voluptatibus, omnis eius vel ab magni nemo, incidunt esse! Quod! 
+                </p>
+            </div>
+
+            <div class="box">
+                <span class="number">03</span> 
+                <i class="fas fa-pencil-alt"></i>
+                <h3>Design</h3>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Doloremque, officia! Necessitatibus delectus sed dicta corrupti
+              voluptatibus, omnis eius vel ab magni nemo, incidunt esse! Quod!
+                </p>
+            </div>
+
+            <div class="box">
+                <span class="number">04</span>
+                <i class="fas fa-paint-brush"></i>
+                <h3>Decoration</h3>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Doloremque, officia! Necessitatibus delectus sed dicta corrupti
+              voluptatibus, omnis eius vel ab magni nemo, incidunt esse! Quod!
+                </p>
+            </div>
+
+            <div class="box">
+                <span class="number">05</span>
+                <i class="fas fa-ruler-combined"></i>
+                    <h3>Planning</h3>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                     Doloremque, officia! Necessitatibus delectus sed dicta corrupti
+                     voluptatibus, omnis eius vel ab magni nemo, incidunt esse! Quod! 
+                    </p>
+            </div>
+
+            <div class="box">
+                <span class="number">06</span>
+                <i class="far fa-building"></i>
+                <h3>Execution</h3>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                 Doloremque, officia! Necessitatibus delectus sed dicta corrupti
+                voluptatibus, omnis eius vel ab magni nemo, incidunt esse! Quod!
+                </p>
+              </div>
+
+            <script>
+              let themeToggler = document.querySelector('#theme-toggler');
+            themeToggler.onclick = () => {
+
+               themeToggler.classList.toggle('fa-sun');
+
+               if(themeToggler.classList.contains('fa-sun')){
+                   document.body.classList.add('active');
+               }else{
+                   
+                   document.body.classList.remove('active');  
+               }
+            }
+          </script>
+  </body>
+</html>
